@@ -13,7 +13,8 @@ The `zcat` command is used to display the contents of a file.
 ```bash
 ./zcat.exe [FILE]...
 ```
-
+---
+---
 
 ## 2. `zmv` - Move or Rename Files
 
