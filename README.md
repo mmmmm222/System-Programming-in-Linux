@@ -81,6 +81,17 @@ The pwd command prints the absolute path of the current working directory.
 ```
 ---
 ---
+## 5. `zecho` -  Print The Enterd text
+
+### Purpose:
+The `zecho` command is used to display a line of text or a string passed as an argument.
+
+### Usage:
+```bash
+./zech.exe [text]
+```
+---
+---
 
 ## Summary of Commands
 
