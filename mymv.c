@@ -28,8 +28,18 @@ int dest_fd =  open(argv[2], O_WRONLY| O_CREAT , 0644);
 
 if(dest_fd < 0)
 {
-   write(1 , "unable to open destination file\n" ,strlen("unable to open destination file\n"));
-   exit(-2);
+   // array of string to carry the concatinated path
+   char* conc[1];
+
+   conc[0] = strcat(argv[2] , argv[1]);
+
+   dest_fd =  open(conc[0], O_WRONLY| O_CREAT , 0644);
+   printf("new path is %s \n", conc[0]);
+   if(dest_fd < 0)
+   {
+     write(1 , "unable to open destination file\n" ,strlen("unable to open destination file\n"));
+     exit(-2);
+   }
 }
 
 int num_read = 0 ;
