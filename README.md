@@ -101,6 +101,7 @@ The `zecho` command is used to display a line of text or a string passed as an a
 | `zmv`                    | Move or rename files                         | `./zmv file.txt /path/to/destination/`      |
 | `zcp`                    | Copy files                                   | `./zcp file.txt /path/to/destination/`      |
 | `zpwd`                   | Print the current working directory          | `./zpwd`                                    |
+| `zecho`                  | display a line of text                       | `./zeco`                                    |
 
 
 
