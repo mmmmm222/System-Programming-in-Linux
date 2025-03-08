@@ -1,6 +1,6 @@
-# Linux Utilities: `zcat`, `zmv`, `zcp`, and `zpwd`
+# Linux Utilities: `zcat`, `zmv`, `zcp`, `zpwd` and `zecho`
 
-#### This document provides an overview of the `zcat`, `zmv`, `zcp`, and `zpwd` utilities in Linux, including their purpose, usage, and examples.
+#### This document provides an overview of the `zcat`, `zmv`, `zcp`, `zpwd` and `zecho` utilities in Linux, including their purpose, usage, and examples.
 
 ---
 
@@ -11,6 +11,7 @@ The `zcat` command is used to display the contents of a file.
 
 ### Usage:
 ```bash
+gcc zcat.c -o zcat.exe
 ./zcat.exe [FILE]...
 ```
 ---
@@ -23,6 +24,7 @@ The `zmv` command is used to move or rename files.
 
 ### Usage:
 ```bash
+gcc zmv.c -o zmv.exe
 ./zmv.exe  [SOURCE] [DEST]
 ```
 **Examples:**
@@ -49,7 +51,8 @@ The `zcp` command is used to copy files.
 
 ### Usage:
 ```bash
-cp [SOURCE] [DEST]
+gcc zcp.c -o zcp.exe
+./zcp [SOURCE] [DEST]
 ```
 **Examples:**
 
@@ -77,6 +80,7 @@ The pwd command prints the absolute path of the current working directory.
 
 ### Usage:
 ```bash
+gcc zpwd.c -o zpwd.exe
 ./zpwd
 ```
 ---
@@ -88,7 +92,8 @@ The `zecho` command is used to display a line of text or a string passed as an a
 
 ### Usage:
 ```bash
-./zech.exe [text]
+gcc zecho.c -o zecho.exe
+./zecho.exe [text]
 ```
 ---
 ---
