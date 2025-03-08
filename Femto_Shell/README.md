@@ -25,7 +25,7 @@ Femto Shell is a minimalistic shell implementation that supports only two comman
    
    ./myFemtoShell.exe
    ```
-**Example:**
+## Example
 ```bash
 ./myFemtoShell.exe 
 Yalla beina >>> 
