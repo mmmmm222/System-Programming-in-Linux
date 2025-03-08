@@ -18,13 +18,13 @@ Femto Shell is a minimalistic shell implementation that supports only two comman
    ```bash
    git clone https://github.com/your-username/femto-shell.git
    cd femto-shell
- ---
 
-### Usage:
-```bash
-gcc myFemtoShell.c -o myFemtoShell.exe
-./myFemtoShell.exe
-```
+2. compile the program
+   ```bash
+   gcc myFemtoShell.c -o myFemtoShell.exe
+   
+   ./myFemtoShell.exe
+   ```
 **Example:**
 ```bash
 ./myFemtoShell.exe 
