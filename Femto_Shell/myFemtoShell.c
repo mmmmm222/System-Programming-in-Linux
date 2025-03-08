@@ -15,7 +15,7 @@ main (int argc, char **argv)
 
   while (1)
     {
-      printf ("Femto shell prompt > ");
+      printf ("Yalla beina >>> ");
 
       // Take the command from the user
       char *fgets_ret = fgets (buf, BUF_COUNT, stdin);
