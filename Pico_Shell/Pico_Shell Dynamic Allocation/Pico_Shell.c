@@ -10,9 +10,6 @@
 #define BUF_COUNT 200
 int EXECUTED = 0;
 
-void trv(StackEntry x);
-
-
 
 int main(int argc, char **argv)
 {
