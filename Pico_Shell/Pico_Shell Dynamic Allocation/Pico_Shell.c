@@ -11,13 +11,19 @@
 int EXECUTED = 0;
 
 
+void trav(char* E)
+{
+	printf("%s\n",E);
+}
+
+
 int main(int argc, char **argv)
 {
     char buf[BUF_COUNT];
 
     while (1) {
 
-	printf("Yalla beina -->");
+	printf("911 Shell With U, How Can I Help U ~~ ");
 
 	// Take the command from the user
 	char *fgets_ret = fgets(buf, BUF_COUNT, stdin);
@@ -47,6 +53,11 @@ int main(int argc, char **argv)
 
 	//Element --> is a variable of StackEntry type to store the poped argument from the stack
 	StackEntry Element;
+	
+	
+	//Stack_voidTraverse(&new_argvs, trav);
+	
+	
 	//pop the first element from the stack to make operations on it 
 	Stack_voidPop(&Element, &new_argvs);
 
@@ -67,7 +78,7 @@ int main(int argc, char **argv)
 		exit(-1);
 	    }
 	    // print the path
-	    printf("Built in pwd output $");
+	    printf("Built in pwd output $$ ");
 	    printf("%s\n", P_Name);
 	    // make the state of the command EXECUTED "intenally" so no need to fork a new process & ececute from linux utilities 
 	    EXECUTED = 1;

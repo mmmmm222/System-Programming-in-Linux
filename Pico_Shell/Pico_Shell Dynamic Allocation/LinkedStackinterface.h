@@ -1,16 +1,29 @@
-/******************************************************/
-/******************************************************/
-/******************  Stack Linked Based    ************/
-/******************  Autor : mohamed ali   ************/
-/******************  Version : 1.00        ************/
-/*****************   Date :  Feb 12, 2024  ************/
-/******************************************************/
-/******************************************************/
+/***************************************************/
+/***************************************************/
+/******************  Stack Linked Based ************/
+/******************  Autor : moHmd Ali  ************/
+/******************  Version : 1.00     ************/
+/***************************************************/
+/***************************************************/
 
 #ifndef LINKED_STACK_H_
 #define LINKED_STACK_H_
 
-typedef u8 StackEntry;
+typedef unsigned char u8;
+typedef signed char s8;
+
+typedef unsigned short int u16;
+typedef signed short int s16;
+
+typedef unsigned long int u32;
+typedef signed long int s32;
+
+typedef float f32;
+typedef double f64;
+
+
+
+typedef char* StackEntry;
 
 typedef struct stackNode
 {
@@ -22,6 +35,7 @@ typedef struct stackNode
 typedef struct
 {
     StackNode *Top;
+    StackNode *Temp;
     u16 Size;
 } Stack;
 

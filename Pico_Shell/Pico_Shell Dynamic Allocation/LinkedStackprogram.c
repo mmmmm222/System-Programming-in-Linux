@@ -5,7 +5,7 @@
 /******************************************************/
 /******************************************************/
 
-#include "STD_TYPES.h"
+//#include "STD_TYPES.h"
 #include "LinkedStackinterface.h"
 #include <stdlib.h>
 /* pn => pointer to node */
@@ -24,10 +24,20 @@ void Stack_voidPush(StackEntry Copy_Element, Stack *ps)
     StackNode *pn = (StackNode *)malloc(sizeof(StackNode));
     /* push the element in the node */
     pn->Entry = Copy_Element;
-    /* make the node pointer point to the node which the top is pointing */
-    pn->Next = ps->Top;
-    /* make the top point to the node which we created recently */
-    ps->Top = pn;
+    
+    if(ps->Size == 0)
+    {
+	pn->Next = NULL;
+    	ps->Top  = pn;
+	ps->Temp = pn;
+    }
+    else{
+    	/* make the node pointer point to the node which the top is pointing */
+    	pn->Next = NULL;
+    	/* make the top point to the node which we created recently */
+    	ps->Temp->Next = pn;
+	ps->Temp = pn;
+    }
     ps->Size++;
 }
 

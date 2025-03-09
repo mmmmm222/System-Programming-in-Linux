@@ -59,17 +59,21 @@ Pico Shell is a minimalistic shell implementation that supports Four Built in co
 
 ## Example
 ```bash
-./myFemtoShell.exe 
-Yalla beina >>> 
-Yalla beina >>> 
-Yalla beina >>> 
-Yalla beina >>> echo ana femto shell Ramadna kareem                 
-ana femto shell Ramadna kareem
-Yalla beina >>> 
-Yalla beina >>> ls
-Invalid command
-Yalla beina >>> exit
-Good Bye :)
+
+./Pico_Shell.exe 
+911 Shell With U, How Can I Help U ~~ pwd
+Built in pwd output $$ /home/ali/coding/git/System-Programming-in-Linux/Pico_Shell/Pico_Shell Dynamic Allocation
+911 Shell With U, How Can I Help U ~~ echo mohamed ali saber
+mohamed ali saber
+911 Shell With U, How Can I Help U ~~ ls
+LinkedStackinterface.h	LinkedStackprogram.c  Pico_Shell.c  Pico_Shell.exe
+911 Shell With U, How Can I Help U ~~ cd ../..
+directory changed internally
+911 Shell With U, How Can I Help U ~~ pwd
+Built in pwd output $$ /home/ali/coding/git/System-Programming-in-Linux
+911 Shell With U, How Can I Help U ~~ exit
+i will exit now :(
+
 ```
 
 
