@@ -10,7 +10,7 @@ Pico Shell is a minimalistic shell implementation that supports Four Built in co
 - **`exit`**: Exits the shell.
 - **`pwd`** : Prints The current Working Directory.
 - **`cd`**  : Change The working Directory to another one.
-- **Invalid Command Handling**: Displays "Invalid command" for any unsupported command.
+- **`Invalid Command Handling`**: Displays "Invalid command" for any unsupported command.
 - **`Static and Dynamic Allocation`** : Provides Both Static and Dynamic Allocation 
 ---
 
