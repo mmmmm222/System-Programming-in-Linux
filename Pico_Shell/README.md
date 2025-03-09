@@ -19,13 +19,14 @@ Pico Shell is a minimalistic shell implementation that supports Four Built in co
 - Clone the repository:
    ```bash
    git clone https://github.com/your-username/femto-shell.git
-   cd Pico_Shell/"Pico_Shell Static Allocation"
 
 - compile the Static allocation program
    ```bash
+   
+   cd Pico_Shell/"Pico_Shell Static Allocation"
+
    gcc Pico_Shell.c -o Pico_Shell.exe
    
-   ./Pico_Shell.exe
    ```
 - compile the Dynamic allocation program 
    ```bash
@@ -33,7 +34,6 @@ Pico Shell is a minimalistic shell implementation that supports Four Built in co
    
    gcc Pico_Shell.c LinkedStackprogram.c -o Pico_Shell.exe
 
-   ./Pico_Shell.exe
    ```
 
 
