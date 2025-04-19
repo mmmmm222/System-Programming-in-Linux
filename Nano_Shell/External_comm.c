@@ -1,0 +1,3 @@
+int Check_External_comm(char ** args){
+
+}
