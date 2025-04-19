@@ -1,4 +1,4 @@
-#include "./getLine.h"
+#include "./include.h"
 
 char * getLine(){
 

@@ -107,9 +107,20 @@ int zecho(char ** args){
     i = 1;
         while (args[i] != NULL){
             if(args[i][0] == '$'){
+                Variable *var_ptr = Head;
+                //check local
+                while (var_ptr != NULL)
+                {
+                    if(strcmp(args[i] + 1 ,var_ptr->Name) == 0){
+                        printf("%s\n", var_ptr->Value);
+                        return 0;
+                    }
+                    var_ptr = var_ptr->Next;
+                }
+                // check environment variables
                 char* value = getenv(args[i] + 1);
                 if(value){
-                    printf("%s", value);
+                    printf("%s\n", value);
                 }
                 else{
                     printf(" ");
