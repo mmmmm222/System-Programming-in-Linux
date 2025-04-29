@@ -276,16 +276,24 @@ void env(){
         return -1;
     }
     
+    printf("in export\n");
+
+
     Variable *var_ptr = Head;
     
     //check the if the value is updated then update the global pointers to carry the new Name & its value
     char *occurance = strchr(args[1], '=');
     
     if(occurance && args[2] == NULL){
+        printf("found =\n");
         *occurance = 0;
         // update the name & value in the global ptrs
         varName = args[1];
+        if(occurance + 1 == NULL){
+            printf("no value");
+        }
         varValue = occurance + 1;
+        printf("%s\t%s\n", varName , varValue);
         // update the value in local then export
         while (var_ptr != NULL)
         {
@@ -297,20 +305,19 @@ void env(){
             var_ptr = var_ptr->Next;
         }
     }
+    // need to check on the stored var in the local
     else{
-        // perror("not name=value");
-        exit(-1);
-    }
-    // check the stored value with the same name then export
-    while (var_ptr != NULL)
-    {
-        if(strcmp(varName ,var_ptr->Name) == 0){
-            // export the old value because there is no new one
-            setenv(var_ptr->Name , var_ptr->Value, 1);
-            return 0;
+        // check the stored value with the same name then export
+        while (var_ptr != NULL)
+        {
+            if(strcmp(args[1] ,var_ptr->Name) == 0){
+                // export the old value because there is no new one
+                setenv(var_ptr->Name , var_ptr->Value, 1);
+            }
+            var_ptr = var_ptr->Next;
         }
-        var_ptr = var_ptr->Next;
     }
+    
     // make the state of the command EXECUTED "intenally" so no need to fork a new process & ececute from linux utilities 
     EXECUTED = 1;
  }
