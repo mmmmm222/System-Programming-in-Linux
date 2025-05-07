@@ -24,5 +24,6 @@ Repository Structure
 - zecho - Text echo utility
 - zmv - File move utility
 
-
-<img src ="https://github.com/user-attachments/assets/cd673e19-ca86-4ae3-8c4c-b3d0501d24f9" width = "4000" height = "500">
+### WIKI
+see This AI Generated Wiki for more details
+[WIKI](https://deepwiki.com/mmmmm222/System-Programming-in-Linux/1-overview)
