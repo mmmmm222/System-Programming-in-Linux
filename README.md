@@ -25,4 +25,4 @@ Repository Structure
 - zmv - File move utility
 
 
-<img src ="https://github.com/user-attachments/assets/cd673e19-ca86-4ae3-8c4c-b3d0501d24f9" width = "1500" height = "1000">
+<img src ="https://github.com/user-attachments/assets/cd673e19-ca86-4ae3-8c4c-b3d0501d24f9" width = "3000" height = "500">
